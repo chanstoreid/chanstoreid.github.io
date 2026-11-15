@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHANSTORE - Top Up PUBG Resmi</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0a0000;color:#fff}
+.header{background:linear-gradient(180deg,#7f1d1d,#b91c1c,#0a0000);padding:25px 16px 18px;text-align:center;border-bottom:3px solid #ef4444}
+.header h1{font-size:42px;color:#fff;letter-spacing:3px}
+.header h1 span{color:#fca5a5}
+.header p{font-size:13px;color:#fecaca;margin-top:5px}
+.badge{display:inline-block;background:#fff;color:#b91c1c;font-weight:bold;font-size:12px;padding:6px 14px;border-radius:20px;margin-top:12px}
+.wa-btn{display:block;background:#22c55e;color:#fff;text-decoration:none;font-weight:bold;padding:14px;border-radius:12px;margin:15px;font-size:15px;text-align:center}
+.wa-btn span{font-size:12px;font-weight:normal;display:block}
+.wrap{max-width:520px;margin:0 auto;padding:15px}
+.banner{background:#dc2626;padding:14px;border-radius:14px;text-align:center;margin-bottom:15px}
+.banner b{font-size:17px}
+.banner p{font-size:12px;color:#fecaca;margin-top:3px}
+.title{font-size:18px;font-weight:bold;margin:8px 0 12px}
+.id-box{background:#fff;border-radius:14px;padding:14px;margin-bottom:15px;border:2px solid #dc2626}
+.id-box label{color:#b91c1c;font-weight:bold;font-size:14px;display:block;margin-bottom:8px;text-align:center}
+.id-box input{width:100%;padding:13px;border:2px solid #fecaca;border-radius:10px;font-size:16px;font-weight:bold;color:#111;text-align:center}
+.id-box p{color:#666;font-size:11px;text-align:center;margin-top:7px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#fff;color:#111;border-radius:16px;overflow:hidden;text-align:center;border:2px solid #fecaca}
+.card .top{background:#b91c1c;color:#fff;font-size:11px;font-weight:bold;letter-spacing:1px;padding:7px}
+.card h2{font-size:22px;margin:10px 0 2px;color:#b91c1c}
+.card .uc{font-size:11px;color:#666;font-weight:bold}
+.card .price{font-size:20px;font-weight:bold;margin:8px 0}
+.card a{display:block;background:#dc2626;color:#fff;text-decoration:none;padding:11px;font-weight:bold;font-size:14px;margin:10px;border-radius:10px}
+.footer{text-align:center;font-size:12px;color:#fca5a5;padding:20px 15px;line-height:1.7}
+.footer b{color:#fff}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>CHAN<span>STORE</span></h1>
+<p>TOP UP PUBG MOBILE RESMI</p>
+<p>Proses Cepat Aman 100 Persen Terpercaya</p>
+<div class="badge">085656960181</div>
+</div>
+
+<a class="wa-btn" href="https://wa.me/6285656960181?text=Halo%20CHANSTORE%20mau%20top%20up%20PUBG">CHAT ADMIN SEKARANG dan kirim id kalian<span>Balas Cepat 085656960181</span></a>
+
+<div class="wrap">
+<div class="banner">
+<b>PUBG MOBILE TOP UP UC</b>
+<p>Top up resmi</p>
+</div>
+
+<div class="id-box">
+<label>MASUKKAN ID PUBG KAMU</label>
+<input type="number" id="pubgId" placeholder="Contoh 51005757577">
+<p>Isi ID dulu sebelum klik BELI, biar otomatis terkirim ke WA</p>
+</div>
+
+<div class="title">PILIH UC PUBG</div>
+<div class="grid" id="list"></div>
+
+<div class="footer">
+<b>CARA ORDER PUBG</b><br>
+1. Isi ID PUBG di atas<br>
+2. Pilih UC dan Klik BELI VIA WA<br>
+3. Transfer dan UC Langsung Masuk<br><br>
+<b>CHANSTORE</b><br>
+Top up resmi - 085656960181<br>
+PUBG MOBILE GLOBAL
+</div>
+</div>
+
+<script>
+let wa="6285656960181";
+let data=[
+["60 UC","PUBG MOBILE","Rp 16.830"],
+["120 UC","PUBG MOBILE","Rp 33.600"],
+["150+30 UC","PUBG MOBILE BONUS UC","Rp 50.430"],
+["240 UC","PUBG MOBILE","Rp 67.731"],
+["300+60 UC","PUBG MOBILE BONUS UC","Rp 100.800"],
+["325 UC","PUBG MOBILE","Rp 91.000"],
+["600+60 UC","PUBG MOBILE BONUS UC","Rp 184.800"],
+["600 UC","PUBG MOBILE","Rp 168.000"],
+["900+150 UC","PUBG MOBILE BONUS UC","Rp 294.000"],
+["1200+200 UC","PUBG MOBILE BONUS UC","Rp 392.000"],
+["1500+300 UC","PUBG MOBILE BONUS UC","Rp 504.000"],
+["1800+400 UC","PUBG MOBILE BONUS UC","Rp 616.000"],
+["2400+600 UC","PUBG MOBILE BONUS UC","Rp 840.000"],
+["3000+850 UC","PUBG MOBILE BONUS UC","Rp 1.078.000"],
+["4000+1000 UC","PUBG MOBILE BONUS UC","Rp 1.400.000"],
+["6000+2100 UC","PUBG MOBILE BONUS UC","Rp 2.268.000"],
+["8000+400 UC","PUBG MOBILE BONUS UC","Rp 2.352.000"]
+];
+let list=document.getElementById('list');
+data.forEach(function(d){
+let el=document.createElement('div');
+el.className='card';
+el.innerHTML='<div class="top">CHANSTORE</div><h2>'+d[0]+'</h2><div class="uc">'+d[1]+'</div><div class="price">'+d[2]+'</div><a onclick="beli(\''+d[0]+'\',\''+d[2]+'\')">BELI VIA WA</a>';
+list.appendChild(el);
+});
+function beli(uc,harga){
+let id=document.getElementById('pubgId').value;
+if(!id){alert('Isi ID PUBG dulu di atas');document.getElementById('pubgId').focus();return;}
+let pesan='Halo CHANSTORE mau beli PUBG '+uc+' '+harga+' ID PUBG '+id;
+window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(pesan),'_blank');
+}
+</script>
+</body>
+</html>
